@@ -167,8 +167,13 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
+<<<<<<< HEAD
   field of view: 70
   orthographic: 0
+=======
+  field of view: 60
+  orthographic: 1
+>>>>>>> 85827c7e952706ca62e9a64bff3b39a9a6089f1d
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -292,7 +297,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4530794090125960, guid: 46b882d5323b74a42a1eea7927f324db, type: 2}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: 1.5
+=======
+      value: 3.22
+>>>>>>> 85827c7e952706ca62e9a64bff3b39a9a6089f1d
       objectReference: {fileID: 0}
     - target: {fileID: 4530794090125960, guid: 46b882d5323b74a42a1eea7927f324db, type: 2}
       propertyPath: m_LocalPosition.z
