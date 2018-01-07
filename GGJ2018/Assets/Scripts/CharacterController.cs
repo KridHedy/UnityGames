@@ -58,6 +58,7 @@ public class CharacterController : MonoBehaviour {
     /// This player only moves along its own forward axis
     /// </summary>
     void Move() {
+        //GetComponent<Rigidbody>().velocity = transform.forward * velocity * Time.deltaTime;
         transform.position += transform.forward * velocity * Time.deltaTime;
     }
 }

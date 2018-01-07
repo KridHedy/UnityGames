@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour {
-/*
+
     public Transform target;
     public Vector3 offsetPos;
     public float moveSpeed = 5;
@@ -68,5 +68,5 @@ public class CameraController : MonoBehaviour {
         smoothRotating = false;
         offsetPos = targetOffsetPos;
     }
-*/
+
 }
