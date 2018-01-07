@@ -8,6 +8,7 @@ public class CharacterController : MonoBehaviour {
     public float turnSpeed = 12f;
 
     Vector2 input;
+    float inputDelay = 0.1f;
     float angle;
 
     Quaternion targetRotation;
@@ -58,7 +59,7 @@ public class CharacterController : MonoBehaviour {
     /// This player only moves along its own forward axis
     /// </summary>
     void Move() {
-        //GetComponent<Rigidbody>().velocity = transform.forward * velocity * Time.deltaTime;
-        transform.position += transform.forward * velocity * Time.deltaTime;
+        GetComponent<Rigidbody>().velocity = transform.forward * velocity * Time.deltaTime;
+        //transform.position += transform.forward * velocity * Time.deltaTime;
     }
 }
