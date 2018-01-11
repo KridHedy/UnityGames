@@ -5,6 +5,9 @@ using UnityEngine;
 public class Rotate : MonoBehaviour {
 
     public bool rotatingClockWise = true;
+    public float min=0;
+    public float max=270;
+    
    
 	// Use this for initialization
 	void Start () {
@@ -14,7 +17,7 @@ public class Rotate : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
     
-            if (rotatingClockWise && (transform.eulerAngles.z > 270 || transform.eulerAngles.z <= 0))
+            if (rotatingClockWise && (transform.eulerAngles.z > max || transform.eulerAngles.z <= min))
             {
                 transform.Rotate(0, 0, -1);
 
@@ -25,11 +28,11 @@ public class Rotate : MonoBehaviour {
                 transform.Rotate(0, 0, 1);
             }
 
-              if (Input.anyKeyDown)
+            /*  if (Input.anyKeyDown)
               {
                   rotatingClockWise = !rotatingClockWise;
               } 
-             
+             */
         
 	}
 }
